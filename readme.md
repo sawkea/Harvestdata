@@ -1,5 +1,7 @@
 # Harvestdata
-![Le web scraping!](https://source.unsplash.com/web%20%scrapping "scrapping")
+
+Création d'un outil de web scraping !
+
 ## **Description du projet**
 Vous allez créer une application multi-utilisateur qui permet d'extraire des données d'un site web (web scraping). L'utilité de cette application va permettre a une personne ayant une bonne connaissance en HTML de pouvoir créer des alertes de prix ou d'informations sur ses thèmes d'intérêt. Votre objectif est de réaliser un outil permettant de :
 + Générer des notifications de mise à jour des données
