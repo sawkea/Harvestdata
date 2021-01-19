@@ -1,2 +1,10 @@
 {
+    "name": "shoar/harvestdata",
+    "authors": [
+        {
+            "name": "sawkea",
+            "email": "shoareau@orange.fr"
+        }
+    ],
+    "require": {}
 }
