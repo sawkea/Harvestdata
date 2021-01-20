@@ -6,5 +6,14 @@
             "email": "shoareau@orange.fr"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "controller\\": "controller",
+            "model\\": "model"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0"
+    }
 }
+
