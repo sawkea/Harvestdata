@@ -1,11 +1,4 @@
 {
-    "name": "shoar/harvestdata",
-    "authors": [
-        {
-            "name": "sawkea",
-            "email": "shoareau@orange.fr"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "controller\\": "controller",
@@ -15,5 +8,6 @@
     "require": {
         "twig/twig": "^3.0"
     }
+
 }
 
