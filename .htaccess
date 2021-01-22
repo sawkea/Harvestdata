@@ -1,6 +1,4 @@
 RewriteEngine On
-RewriteBase /harvestdata
 
-RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
-RewriteRule ^ %1 [L,NE,R=302]
-RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./public/index.php?url=$1 [QSA,L]
