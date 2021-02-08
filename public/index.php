@@ -1,6 +1,6 @@
 <?php
 
-use App\Twig;
+use App\Twig\Twig;
 
 require('../vendor/autoload.php');
 
@@ -9,7 +9,7 @@ $router = new App\Router\Router($_GET['url']);
 // Différentes routes 
 $router->get('/', function(){ 
    
-    $twig = new Twig('base.html.twig');
+    $twig = new Twig('pages/login.html.twig');
     $twig->render([   
             
     ]); 
