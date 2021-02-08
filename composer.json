@@ -8,8 +8,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "model"
+            "App\\": "app"
         }
     },
-    "require": {}
+    "require": {
+        "twig/twig": "^3.0"
+    }
 }
