@@ -1,0 +1,94 @@
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.text-align-r {
+  text-align: right;
+}
+
+.text-align-f {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #231F20;
+}
+
+p.access {
+  font-size: 2.5rem;
+}
+
+.bg-login {
+  background: url(assets/images/fond_login.svg);
+}
+.bg-login .container-login {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bg-login .container-login input {
+  display: block;
+  width: 530px;
+  border: none;
+  border-bottom: 3px solid #009444;
+  margin-top: 35px;
+}
+.bg-login .container-login label {
+  font-size: 1.8rem;
+  color: #6D6E71;
+  font-weight: 300;
+}
+.bg-login .container-login button {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.btn-login {
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-right-radius: 45px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomright: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  background: linear-gradient(90deg, #8dc63f 0%, #009444 100%);
+  border: none;
+  width: 100%;
+  height: 4.375rem;
+}
+
+/*# sourceMappingURL=style.css.map */

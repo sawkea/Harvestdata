@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: $font-principal;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-size: 1rem;
+}
+.text-align-r{
+    text-align: right;
+}
+.text-align-f{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: $colorText;
+}

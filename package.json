@@ -1,0 +1,16 @@
+{
+  "name": "harvestdata",
+  "version": "1.0.0",
+  "description": "Création d'un outil de web scraping !",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.5",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/styles/scss/style.scss:./assets/styles/css/style.css"
+  }
+}

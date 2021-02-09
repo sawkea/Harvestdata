@@ -1,0 +1,35 @@
+p.access{
+    font-size: 2.5rem;
+}
+
+.bg-login{
+    background: url(assets/images/fond_login.svg);
+    .container-login{
+        width: 1400px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        input{
+            display: block;
+            width: 530px;
+            border: none;
+            border-bottom: 3px solid $greenDark;
+            margin-top: 35px;
+        }
+        label{
+            font-size: 1.8rem;
+            color: $greyLight;
+            font-weight: 300;
+        }
+        button{
+            font-size: 1.8rem;
+            font-family: $font-principal;
+            font-weight: 300;
+            color: $colorText-light;
+        }
+    }
+}
+
