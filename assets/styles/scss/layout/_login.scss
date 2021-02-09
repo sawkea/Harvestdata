@@ -3,7 +3,11 @@ p.access{
 }
 
 .bg-login{
-    background: url(assets/images/fond_login.svg);
+    background: url("../../images/fond_login.png") no-repeat; 
+    width: 100%;
+    height: 100vh;
+
+    // height: 100vh;
     .container-login{
         width: 1400px;
         margin-right: auto;
@@ -18,6 +22,7 @@ p.access{
             border: none;
             border-bottom: 3px solid $greenDark;
             margin-top: 35px;
+            background: none;
         }
         label{
             font-size: 1.8rem;
