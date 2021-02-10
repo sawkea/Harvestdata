@@ -10,9 +10,10 @@
                 <h2 class="mt-3">Private Access</h2>
                 <p class="access">Sign in to access pages</p>
             </div>
-        
+            
+            <!-- FORM LOGIN -->
             <div>
-                <form action="" method="post">
+                <form novalidate method="post" id="log-in">
                     
                     <div>
                         <label for="name">Your email</label>
@@ -22,15 +23,22 @@
 
                     <div class="mt-4">
                         <label for="email">Your password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="pass" id="password" required>
                     </div>
             
-                    <button type="submit" class="btn-login mt-4">Login</button>
+                    <button class="btn-login mt-4">Login</button>
                     
                 </form>
                 <p class="mt-2">Don’t have an account ? <a href="#">Create your account</a></p>
+
+                <!-- Error -->
+                <div class="error hidden">
+                    <p></p>
+                </div>
             </div>
             
+            
+
         </div>
         
     </div>

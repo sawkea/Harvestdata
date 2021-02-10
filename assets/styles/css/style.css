@@ -47,6 +47,18 @@ a {
   color: #231F20;
 }
 
+.hidden {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
 p.access {
   font-size: 2.5rem;
 }
@@ -84,6 +96,9 @@ p.access {
   font-weight: 300;
   color: #FFFFFF;
 }
+.bg-login .container-login .error {
+  color: red;
+}
 
 .btn-login {
   -webkit-border-top-right-radius: 45px;
@@ -96,6 +111,16 @@ p.access {
   border: none;
   width: 100%;
   height: 4.375rem;
+}
+
+.deconnexion {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #58595B;
+}
+.deconnexion i:before {
+  margin-right: 1rem;
+  font-size: 2.1875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
