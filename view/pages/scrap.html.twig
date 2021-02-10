@@ -2,7 +2,12 @@
 
 
 {% block content %}
-
-      {% include "parts/header.html.twig" %}
+    
+    {% include "parts/header.html.twig" %}
+    
+    <div class="container-main">
+        {% include "parts/menu.html.twig" %}
+        {% include "parts/form-scrap.html.twig" %}
+    </div>
 
 {% endblock %}
