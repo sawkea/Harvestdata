@@ -1,13 +1,9 @@
-{% extends "base.html.twig" %}
+{% extends "base-site.html.twig" %}
 
 
 {% block content %}
     
-    {% include "parts/header.html.twig" %}
-    
-    <div class="container-main">
-        {% include "parts/menu.html.twig" %}
-        {% include "parts/form-scrap.html.twig" %}
-    </div>
+    {% include "parts/menu.html.twig" %}
+    {% include "parts/form-scrap.html.twig" %}
 
 {% endblock %}

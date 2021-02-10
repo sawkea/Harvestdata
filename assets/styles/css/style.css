@@ -1,3 +1,7 @@
+.font-12 {
+  font-size: 0.75rem;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -12,6 +16,14 @@
 
 .mt-4 {
   margin-top: 4rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
 }
 
 .container-main {
@@ -67,6 +79,18 @@ a {
 
 li {
   list-style: none;
+}
+
+.bg-color-site {
+  margin-top: 0;
+  background: linear-gradient(90deg, #8dc63f 0%, #009444 100%);
+}
+
+.bg-white {
+  background: #f8f8f8;
+  width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 p.access {

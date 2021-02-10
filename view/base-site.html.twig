@@ -10,10 +10,22 @@
         <title>Harvestdata</title>
     </head>
 <body>
-    <div class="bg-login">
-        {% block content %}
-            
-        {% endblock %}
+    <div class="bg-color-site">
+        <div class="bg-white">
+            <header>
+                {% include "parts/header.html.twig" %}
+            </header>
+        
+            <div class="container-main">
+                <main>
+                    {% block content %}
+                        
+                    {% endblock %}
+                </main>
+            </div>
+        
+            {% include "parts/footer.html.twig" %}
+        </div>
     </div>
     
     <script src="assets/scripts/login.js"></script>

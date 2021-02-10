@@ -42,3 +42,15 @@ a{
 li{
     list-style: none;
 }
+
+.bg-color-site{
+    margin-top: 0;
+    background: linear-gradient(90deg, rgba(141,198,63,1) 0%, rgba(0,148,68,1) 100%);
+}
+
+.bg-white{
+    background: rgb(248, 248, 248);
+    width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
