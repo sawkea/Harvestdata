@@ -41,12 +41,11 @@ class UserController
     static function connexionUser(User $user)
     {
         $email = $user->get_email();
-
         $connexion = new ConnexionDb();
 
         $query = "SELECT * FROM user WHERE email = :email";
         $params = [
-            ['email', $email, \PDO::PARAM_STR]
+            ['email', $email, \PDO::PARAM_STR],
         ];
 
         $informationUser = $connexion->query($query, $params);
@@ -58,7 +57,7 @@ class UserController
                 $arrayhydrate[$key] = $value;
             }
             $user->hydrate($arrayhydrate);
-
+            
             $_SESSION['user'] = true;
             $_SESSION['id'] = $user->get_id();
         }else{
