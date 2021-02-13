@@ -93,13 +93,41 @@ li {
   margin-left: auto;
 }
 
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+input {
+  outline-style: none;
+}
+
+.svg-container {
+  max-width: 500px;
+}
+
 p.access {
   font-size: 2.5rem;
 }
 
 .bg-login {
   background: url("../../images/fond_login.png") no-repeat;
-  width: 100%;
+  background-size: 100%;
   height: 100vh;
 }
 .bg-login .container-login {
@@ -114,10 +142,15 @@ p.access {
 .bg-login .container-login input {
   display: block;
   width: 530px;
+  height: 50px;
   border: none;
   border-bottom: 3px solid #009444;
   margin-top: 35px;
   background: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 2rem;
+  margin-bottom: 30px;
 }
 .bg-login .container-login label {
   font-size: 1.8rem;
@@ -134,6 +167,68 @@ p.access {
   color: red;
 }
 
+@media screen and (max-width: 1100px) {
+  .bg-login .container-login {
+    flex-direction: column;
+    color: red;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.container-create-account {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-create-account input {
+  display: block;
+  width: 400px;
+  border: none;
+  height: 35px;
+  border-bottom: 3px solid #009444;
+  margin-bottom: 40px;
+  background: none;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.container-create-account label {
+  font-size: 1rem;
+  color: #6D6E71;
+  font-weight: 300;
+  margin-top: 0.75rem;
+}
+.container-create-account button {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.container-create-account .error {
+  color: red;
+}
+
+.form-scrap input {
+  width: 100%;
+  height: 38px;
+  margin-top: 35px;
+  background: none;
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-right-radius: 45px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomright: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-color: #009444;
+}
+.form-scrap label {
+  display: inline;
+}
+
 .btn-login {
   -webkit-border-top-right-radius: 45px;
   -webkit-border-bottom-right-radius: 45px;
@@ -145,6 +240,32 @@ p.access {
   border: none;
   width: 100%;
   height: 4.375rem;
+}
+
+.btn-register {
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-right-radius: 45px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomright: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  background: linear-gradient(90deg, #8dc63f 0%, #009444 100%);
+  border: none;
+  width: 100%;
+  height: 3.375rem;
+}
+
+.btn-cancel {
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-right-radius: 45px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomright: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  background: linear-gradient(90deg, #7d7e7d 0%, #292c2b 100%);
+  border: none;
+  width: 100%;
+  height: 3.375rem;
 }
 
 .deconnexion {

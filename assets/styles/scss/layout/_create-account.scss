@@ -1,0 +1,38 @@
+.container-create-account{
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input{
+        display: block;
+        width: 400px;
+        border: none;
+        height: 35px;
+        border-bottom: 3px solid $greenDark;
+        margin-bottom: 40px;
+        background: none;
+        padding-left: 2rem;
+        font-size: 1rem;
+        font-family: $font-principal;
+    }
+      
+    label{
+        font-size: 1rem;
+        color: $greyLight;
+        font-weight: 300;
+        margin-top: 0.75rem;
+    }
+    button{
+        font-size: 1rem;
+        font-family: $font-principal;
+        font-weight: 300;
+        color: $colorText-light;
+    }
+    .error{
+        color: red;
+        
+    }
+}

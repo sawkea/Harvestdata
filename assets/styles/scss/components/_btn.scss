@@ -9,6 +9,30 @@
     border: none;
     width: 100%;
     height: 4.375rem;
+}
 
-    
+.btn-register{
+    -webkit-border-top-right-radius: 45px;
+    -webkit-border-bottom-right-radius: 45px;
+    -moz-border-radius-topright: 45px;
+    -moz-border-radius-bottomright: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background: linear-gradient(90deg, rgba(141,198,63,1) 0%, rgba(0,148,68,1) 100%);
+    border: none;
+    width: 100%;
+    height: 3.375rem;
+}
+
+.btn-cancel{
+    -webkit-border-top-right-radius: 45px;
+    -webkit-border-bottom-right-radius: 45px;
+    -moz-border-radius-topright: 45px;
+    -moz-border-radius-bottomright: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background: linear-gradient(90deg, rgb(125, 126, 125) 0%, rgb(41, 44, 43) 100%);
+    border: none;
+    width: 100%;
+    height: 3.375rem;
 }

@@ -4,10 +4,15 @@ session_start();
 use App\Twig\Twig;
 use App\model\User;
 use App\model\UserController;
+use App\Router\Router;
 
-require('../vendor/autoload.php');
+// require('../vendor/autoload.php');
+require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "vendor/autoload.php";
 
-$router = new App\Router\Router($_GET['url']);
+// define('BASE_PATH', './harvestdata');
+// define('SERVER_URI', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . BASE_PATH);
+
+$router = new Router($_GET['url']);
 
 // Différentes routes 
 // Login
@@ -37,12 +42,19 @@ $router->post('/connexion-login', function() {
     echo json_encode($validate);
 });  
 
+// Connexion create account
+$router->get('/create-account', function() {
+    $twig = new Twig('pages/account.html.twig');
+    $twig->render([   
+
+    ]); 
+});  
+
 // Scrap
 $router->get('/scrap', function(){ 
-    
     $twig = new Twig('pages/scrap.html.twig');
     $twig->render([   
-            
+        //    echo ('coucou');
     ]); 
 });
 

@@ -1,5 +1,44 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h2>Account</h2>
+    <!-- FORM CREATE ACCOUNT -->
+    <div class="container-create-account">
+        <form novalidate method="post" id="create-account">
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+          
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" required>
+     
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+
+            <div>
+                <label for="pass2">Confirm password</label>
+                <input type="password" name="pass2" id="pass2" required>
+            </div>
+
+            <button class="btn-register mt-4">Register</button>
+            <button class="btn-cancel mt-2">Cancel</button>
+            
+            
+        </form>
+        
+
+        <!-- Error -->
+        <div class="error hidden">
+            <p></p>
+        </div>
+    </div>
 {% endblock %}
