@@ -15,6 +15,7 @@ require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "vendor/autoload.php"
 $router = new Router($_GET['url']);
 
 // Différentes routes 
+
 // Login
 $router->get('/', function(){ 
     $session = (isset($_SESSION['user']) && $_SESSION['user'] === true) ? true : false;
@@ -50,11 +51,18 @@ $router->get('/create-account', function() {
     ]); 
 });  
 
+// Add User
+$router->get('add-user', function() {
+    
+    // header("Location: /harvestdata/scrap");
+    // ???
+});
+
+
 // Scrap
 $router->get('/scrap', function(){ 
     $twig = new Twig('pages/scrap.html.twig');
     $twig->render([   
-        //    echo ('coucou');
     ]); 
 });
 

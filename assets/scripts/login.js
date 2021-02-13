@@ -1,6 +1,6 @@
 // Const _________________________________
 let formLogin = document.getElementById("log-in");
-// let formRegistre = document.getElementById("register");
+let formRegister = document.getElementById("create-account");
 let divError = document.getElementsByClassName("error")[0];
 
 // functions _____________________________
@@ -54,3 +54,45 @@ formLogin.addEventListener("submit", (e) => {
     
     getJSON(option);
 });
+
+
+
+// Form create user
+formRegister.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let form = new FormData(formRegister);
+    let password = formRegister.children[1].children[3];
+    let passwordVerif = formRegister.children[1].children[5];
+
+    if(password.value != passwordVerif.value){
+        divError.children[0].innerHTML = "Les mots de passe sont différents";
+        divError.classList.add("false");
+        divError.classList.remove("hidden");
+    }else{
+        let option = {
+            "type": "POST",
+            "url": "add-user",
+            "data": form,
+        }
+    
+        async function getJSON (option) {
+            let xhrJSON = await xhr(option).then(JSON.parse);
+            if(xhrJSON === false){
+                divError.children[0].innerHTML = "Vous pouvez désormais vous connecter";
+                divError.classList.add("true");
+                divError.classList.remove("hidden");
+            }else{
+                divError.children[0].innerHTML = "L'utilisateur existe déjà";
+                divError.classList.add("false");
+                divError.classList.remove("hidden");
+            }
+        } 
+        
+        getJSON(option);
+    }
+
+    console.log(password);
+
+
+})
