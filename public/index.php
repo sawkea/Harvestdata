@@ -52,8 +52,9 @@ $router->get('/create-account', function() {
 });  
 
 // Add User
-$router->get('add-user', function() {
-    
+$router->post('add-user', function() {
+    $addUser = UserController::addUser();
+    return $addUser;
     // header("Location: /harvestdata/scrap");
     // ???
 });

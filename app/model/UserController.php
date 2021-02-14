@@ -73,9 +73,10 @@ class UserController
      * 
      * @param object $user
      */
-    static function addUser(User $user){
+    static function addUser(){
 
-        $validation = signupValid();
+        $controller = new UserController();
+        $validation = $controller->signupValid();
 
         if($validation === "OK"){
             $base = new ConnexionDb;
