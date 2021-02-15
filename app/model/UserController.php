@@ -81,17 +81,16 @@ class UserController
         if($validation === "OK"){
             $base = new ConnexionDb;
 
-            $base->qw('INSERT INTO user(`username`, `firstname`, `email`, `pass`, `valid`)
-                      VALUES (:username, :firstname, :email, :pass, :1)',
+            $base->query("INSERT INTO user(username, firstname, email, pass, valid)
+                      VALUES (:username, :firstname, :email, :pass, 1)",
             array(
                 array('username',$_POST['username'],\PDO::PARAM_STR),
                 array('firstname',$_POST['firstname'],\PDO::PARAM_STR),
                 array('email',$_POST['email'],\PDO::PARAM_STR),
-                array('pass',\PDO::PARAM_STR),
-                array('valid',\PDO::PARAM_INT)
+                array('pass',$_POST['pass'],\PDO::PARAM_STR)
                 )
             );
-            $userM = new User($_POST);
+            // $userM = new User($_POST);
 
         }else{
             echo 'erreur d\'inscription';
@@ -102,8 +101,8 @@ class UserController
     private function signupValid(){
         if ($this->checkMail($_POST['email'])){
             if ($this->checkUsername($_POST['username'])){
-                if ($this->checkPass($_POST['pass']) && $this->checkPass($_POST['passconf'])){
-                    if($_POST['pass'] === $_POST['passconf']){
+                if ($this->checkPass($_POST['pass']) && $this->checkPass($_POST['pass2'])){
+                    if($_POST['pass'] === $_POST['pass2']){
                         if(!$this->checkUsernameExist()){
                             if(!$this->checkMailExist()){
                                 return 'OK';
@@ -157,7 +156,7 @@ class UserController
                     )
             );
 
-            if(isset($req[0]->mail)){
+            if(isset($req[0]->email)){
                 return true;
             }else{
                 return false;

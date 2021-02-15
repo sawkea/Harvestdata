@@ -6,8 +6,8 @@
         <form novalidate method="post" id="create-account">
             
             <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+                <label for="username">Name</label>
+                <input type="text" name="username" id="username" required>
           
                 <label for="firstname">Firstname</label>
                 <input type="text" name="firstname" id="firstname" required>
@@ -42,3 +42,5 @@
         </div>
     </div>
 {% endblock %}
+
+{% block script %}<script src="assets/scripts/add-user.js"></script>{% endblock %}
