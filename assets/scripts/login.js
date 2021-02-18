@@ -1,6 +1,5 @@
 // Const _________________________________
 let formLogin = document.getElementById("log-in");
-// let formRegister = document.getElementById("create-account");
 let divError = document.getElementsByClassName("error")[0];
 
 // functions _____________________________
@@ -53,6 +52,4 @@ formLogin.addEventListener("submit", (e) => {
     } 
     
     getJSON(option);
-});
-
-
+})
