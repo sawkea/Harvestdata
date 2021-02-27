@@ -6,12 +6,19 @@ class ConnexionDb {
 	private $_passDb;
 	private $_connec;
 
-	public function __construct($db = 'harvestdata', $login ='root', $passDb=''){
+	public function __construct($db = 'soniah_harvestdata', $login ='soniah', $passDb='u33mp+9nqTC5gQ=='){
 		$this->_login = $login;
 		$this->_passDb = $passDb;
 		$this->_db = $db;
 		$this->connexion();
 	}
+
+	// public function __construct($db = 'harvestdata', $login ='root', $passDb=''){
+	// 	$this->_login = $login;
+	// 	$this->_passDb = $passDb;
+	// 	$this->_db = $db;
+	// 	$this->connexion();
+	// }
 
 	private function connexion(){
 		try
