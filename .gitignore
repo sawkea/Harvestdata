@@ -2,5 +2,5 @@ vendor
 node_modules
 composer.lock
 public/cache/
-app/connexion/connexionDb.php
+app/connexion/connexionDbenligne.php
 assets/dump/

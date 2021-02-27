@@ -13,13 +13,6 @@ class ConnexionDb {
 		$this->connexion();
 	}
 
-	// public function __construct($db = 'harvestdata', $login ='root', $passDb=''){
-	// 	$this->_login = $login;
-	// 	$this->_passDb = $passDb;
-	// 	$this->_db = $db;
-	// 	$this->connexion();
-	// }
-
 	private function connexion(){
 		try
 		{
