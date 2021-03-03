@@ -139,7 +139,7 @@ p.access {
   height: 100vh;
 }
 .bg-login .container-login {
-  width: 1400px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   height: 100vh;
@@ -149,16 +149,15 @@ p.access {
 }
 .bg-login .container-login input {
   display: block;
-  width: 530px;
+  width: 100%;
   height: 50px;
   border: none;
   border-bottom: 3px solid #009444;
-  margin-top: 35px;
   background: none;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   padding-left: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .bg-login .container-login label {
   font-size: 1.8rem;
@@ -175,12 +174,34 @@ p.access {
   color: red;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
+  .bg-login {
+    background-size: auto;
+    height: auto;
+  }
   .bg-login .container-login {
+    padding-top: 2rem;
+    width: 90%;
     flex-direction: column;
-    color: red;
     max-width: 100%;
     height: auto;
+  }
+  .bg-login .container-login h2, .bg-login .container-login p {
+    text-align: center;
+  }
+  .bg-login .container-login h2 {
+    font-size: 2.5rem;
+  }
+  .bg-login .container-login p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .bg-login .container-login input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .bg-login .container-login label {
+    font-size: 1.3rem;
   }
 }
 .container-create-account {
@@ -256,7 +277,7 @@ p.access {
   background: linear-gradient(90deg, #8dc63f 0%, #009444 100%);
   border: none;
   width: 100%;
-  height: 4.375rem;
+  height: 4rem;
 }
 
 .btn-register {
