@@ -1,10 +1,11 @@
 .menu{ 
+    font-family: $font-principal;
     ul{
         
         li{
             display: inline;
             font-size: 1.5625rem;
-            margin-right: 2rem;
+            margin-right: 3rem;
         }
     }
     li:last-of-type{
@@ -12,4 +13,9 @@
 
     }
     
+}
+
+.border-menu:hover, .border-menu:active{
+    border-bottom: 3px solid $greyDark;
+    width: 110%;
 }

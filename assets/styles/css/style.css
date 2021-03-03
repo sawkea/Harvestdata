@@ -32,7 +32,7 @@
   margin-left: auto;
 }
 
-body {
+html, body, p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -118,7 +118,7 @@ input {
 }
 
 .svg-container {
-  max-width: 500px;
+  max-width: 360px;
 }
 
 textarea:focus,
@@ -148,7 +148,7 @@ p.access {
   align-items: center;
 }
 .bg-login .container-login input {
-  display: block;
+  display: inline;
   width: 100%;
   height: 50px;
   border: none;
@@ -249,21 +249,21 @@ p.access {
   color: green;
 }
 
-.form-scrap input {
-  width: 100%;
-  height: 38px;
-  margin-top: 35px;
-  background: none;
-  -webkit-border-top-right-radius: 45px;
-  -webkit-border-bottom-right-radius: 45px;
-  -moz-border-radius-topright: 45px;
-  -moz-border-radius-bottomright: 45px;
-  border-top-right-radius: 45px;
-  border-bottom-right-radius: 45px;
-  border-color: #009444;
+.form-scrap {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
-.form-scrap label {
+.form-scrap input {
   display: inline;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #009444;
+  background: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 2rem;
+  margin-bottom: 20px;
 }
 
 .btn-login {
@@ -316,13 +316,21 @@ p.access {
   font-size: 2.1875rem;
 }
 
+.menu {
+  font-family: "Montserrat", sans-serif;
+}
 .menu ul li {
   display: inline;
   font-size: 1.5625rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .menu li:last-of-type {
   margin-right: 0;
+}
+
+.border-menu:hover, .border-menu:active {
+  border-bottom: 3px solid #58595B;
+  width: 110%;
 }
 
 /*# sourceMappingURL=style.css.map */

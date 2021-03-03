@@ -1,4 +1,4 @@
-body {
+html, body, p {
     margin: 0;
     font-family: $font-principal;
 }
@@ -83,7 +83,7 @@ input{
 }
 
 .svg-container {
-    max-width: 500px;
+    max-width: 360px;
 }
 
 textarea:focus,

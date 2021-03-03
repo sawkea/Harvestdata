@@ -1,46 +1,67 @@
 {% block formScrap %}
     <div class="form-scrap">
         <form action="" class="form-inline">
-            <div>
-                <label for="url">Sitemap</label>
-                <input type="url" name="url" id="url" required>
+            
+            <div class="flex w-full">
+                <label for="urlExtract">Sitemap</label>
+                <input type="url" name="urlExtract" id="urlExtract" required>
             </div>
-            <div>
-                <label for="extract">Type d'extraction</label>
-                <input type="checkbox" name="extract" id="extract" required>
-                <input type="checkbox" name="extract" id="extract" required>
+        
+            <div class="flex w-full">
+                <label for="typeExtract">Type d'extraction</label>
+                <input type="checkbox" name="dataSet" id="dataSet" required>
+                <input type="checkbox" name="simpleData" id="simpleData" required>
             </div>
-            <div>
+    
+            <div class="flex w-full">
                 <label for="container">Container</label>
                 <input type="text" name="container" id="container" required>
                 <p><a href="#">+ add data</a></p>
-    
             </div>
-            <div>
+              
+            <div class="flex w-full">
                 <label for="path">Path</label>
                 <input type="text" name="path" id="path" required>
     
-                <label for="name">Type data</label>
-                <input type="email" name="email" id="email" required>
+                <label for="typeData">Type data</label>
+                <select name="typeData" id="">
+                    <option value="">Text</option>
+                    <option value="">Number</option>
+                    <option value="">Picture</option>
+                </select>
             </div>
-            <div>
+
+            <div class="flex w-full">
                 <label for="name">Name</label>
                 <input type="email" name="email" id="email" required>
     
-                <label for="name">Category</label>
-                <input type="email" name="email" id="email" required>
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="">Information</option>
+                    <option value="">Compare</option>
+                    <option value="">Price</option>
+                </select>
             </div>
-            <div>
-                <label for="name">Periodicity</label>
-                <input type="email" name="email" id="email" required>
+
+            <div class="flex w-full">
+                <label for="periodicity">Periodicity</label>
+                <select name="periodicity" id="periodicity">
+                    <option value="">Everyday</option>
+                    <option value="">Everyweek</option>
+                    <option value="">Everymonth</option>
+                </select>
             </div>
     
-            <button class="btn-login mt-4">Cancel</button>
-            <button class="btn-login mt-4">Register</button>
+            <div class="flex w-full">
+                <button class="btn-login mt-4">Cancel</button>
+                <button class="btn-login mt-4">Register</button>
+            </div>
         </form>
     </div>
 
-    <p>View</p>
-    <p>"We vaccinate just in time", "there are no hidden stocks": details from Olivier Véran after the start of the campaign in France.</p>
+    <p class="mt-7 text-center mb-4 font-bold">View</p>
+    <div class="shadow-md px-5 py-5 mt-3 mb-16">
+        <p>"We vaccinate just in time", "there are no hidden stocks": details from Olivier Véran after the start of the campaign in France.</p>
+    </div>
 {% endblock %}
 
