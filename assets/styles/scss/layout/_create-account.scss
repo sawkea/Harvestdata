@@ -1,5 +1,5 @@
 .container-create-account{
-    width: 1400px;
+    
     margin-right: auto;
     margin-left: auto;
     height: 100vh;
@@ -8,7 +8,7 @@
     align-items: center;
     input{
         display: block;
-        width: 400px;
+        width: 350px;
         border: none;
         height: 35px;
         border-bottom: 3px solid $greenDark;
@@ -41,3 +41,4 @@
         &.true{ color: green; }
     }
 }
+
