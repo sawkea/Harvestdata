@@ -63,6 +63,7 @@ $router->post('add-user', function() {
 // Scrap
 $router->get('/scrap', function(){ 
     $twig = new Twig('pages/scrap.html.twig');
+    $user = new User($_POST);
     $twig->render([   
         // $_firstname = $_GET['firstname']
         'firstname' => $user->get_firstname(),
