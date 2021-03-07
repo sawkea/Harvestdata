@@ -64,6 +64,15 @@ $router->post('add-user', function() {
 $router->get('/scrap', function(){ 
     $twig = new Twig('pages/scrap.html.twig');
     $twig->render([   
+        // $_firstname = $_GET['firstname']
+        'firstname' => $user->get_firstname(),
+    ]); 
+});
+
+// History
+$router->get('/history', function(){ 
+    $twig = new Twig('pages/history.html.twig');
+    $twig->render([   
         // $firstname = $_GET['firstname'],
     ]); 
 });

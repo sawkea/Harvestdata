@@ -3,11 +3,13 @@
 
 {% block content %}
 
-  {% include "parts/menu.html.twig" %}
-
-  <div class="italic ml-5"><br>Bienvenue<span> .... {{ email }} </span>, vous êtes connectés !</div> <br>
-
-  {% include "parts/form-scrap.html.twig" %} 
+  <div class="container mx-auto max-w-4xl">
+    {% include "parts/menu.html.twig" %}
+  
+    <div class="italic ml-5"><br>Bienvenue<span> .... {{ firstname }} </span>, vous êtes connectés !</div> <br>
+  
+    {% include "parts/form-scrap.html.twig" %} 
+  </div>
 
   
 
